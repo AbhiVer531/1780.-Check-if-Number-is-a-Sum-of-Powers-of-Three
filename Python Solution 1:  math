@@ -1,0 +1,9 @@
+class Solution:
+    def checkPowersOfThree(self, n: int) -> bool:
+        num = abs(n)
+        checkPt = 1
+        while num > 0:
+            if num % 3 == 2:
+                return False
+            num //= 3
+        return True
